@@ -1,0 +1,40 @@
+{
+  "domainName": "start-fc-http-nodejs14.hello-world-service.1740298130743624.cn-hangzhou.fc.devsapp.net",
+  "accountId": "1740298130743624",
+  "protocol": "HTTP",
+  "certConfig": {
+    "certName": null,
+    "privateKey": null,
+    "certificate": null
+  },
+  "tlsConfig": {
+    "minVersion": null,
+    "maxVersion": null,
+    "cipherSuites": null
+  },
+  "apiVersion": "2016-08-15",
+  "routeConfig": {
+    "routes": [
+      {
+        "path": "/*",
+        "accountId": null,
+        "serviceName": "hello-world-service",
+        "functionName": "start-fc-http-nodejs14",
+        "qualifier": null,
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "rewriteConfig": null,
+        "innerRewriteConfig": null
+      }
+    ]
+  },
+  "createdTime": "2023-04-10T17:13:15Z",
+  "lastModifiedTime": "2023-04-27T02:32:14Z",
+  "keepFullPath": null,
+  "subdomainCount": null,
+  "wafConfig": {
+    "enableWAF": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "statefulConfig": {
+    "functionId": "291e7dc4-2ea9-4432-bb5f-aad0b67c78de",
+    "functionName": "start-fc-http-nodejs14",
+    "description": "hello world by serverless devs",
+    "runtime": "nodejs14",
+    "handler": "index.handler",
+    "timeout": 60,
+    "initializer": "",
+    "initializationTimeout": 3,
+    "codeSize": 650,
+    "codeChecksum": "18049586010613461997",
+    "memorySize": 128,
+    "gpuMemorySize": null,
+    "environmentVariables": {
+      "a": "1",
+      "b": "2"
+    },
+    "createdTime": "2023-04-10T17:13:12Z",
+    "lastModifiedTime": "2023-04-27T02:32:11Z",
+    "instanceConcurrency": 1,
+    "instanceSoftConcurrency": null,
+    "customContainerConfig": null,
+    "caPort": null,
+    "instanceType": "e1",
+    "layers": null,
+    "layersArnV2": null,
+    "instanceLifecycleConfig": {
+      "preFreeze": {
+        "handler": "",
+        "timeout": 3
+      },
+      "preStop": {
+        "handler": "",
+        "timeout": 3
+      }
+    },
+    "customDNS": null,
+    "customRuntimeConfig": null,
+    "customHealthCheckConfig": null,
+    "name": "start-fc-http-nodejs14"
+  }
+}

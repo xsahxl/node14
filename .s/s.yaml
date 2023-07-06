@@ -1,0 +1,45 @@
+edition: 1.0.0
+name: hello-world-app
+access: default
+vars:
+  region: cn-hangzhou
+  service:
+    name: hello-world-service
+    description: hello world by serverless devs
+  environmentVariables:
+    a: '1'
+    b: '2'
+services:
+  helloworld:
+    component: fc
+    props:
+      region: cn-hangzhou
+      service:
+        name: hello-world-service
+        description: hello world by serverless devs
+      function:
+        name: start-fc-http-nodejs14
+        description: hello world by serverless devs
+        runtime: nodejs14
+        codeUri: ./code
+        handler: index.handler
+        memorySize: 128
+        timeout: 60
+        environmentVariables:
+          a: '1'
+          b: '2'
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+              methods:
+                - GET
+                - POST
